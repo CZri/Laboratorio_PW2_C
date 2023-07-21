@@ -4,7 +4,8 @@ from django.shortcuts import render
 #from django.shortcuts import render
 from rest_framework import viewsets
 from .serializer import serializerStudent,serializerGroup
-from  .models import Group,Student
+from  .models.Group import Group
+from .models.Student import Student
 # Create your views here.
 class ViewGroup(viewsets.ModelViewSet):
     serializer_class=serializerGroup
